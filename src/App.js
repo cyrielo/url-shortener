@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <HeaderNav />
         <Switch>
-          <HeaderNav />
           <Route path="/" exact component={Home} />
         </Switch>
       </BrowserRouter>
