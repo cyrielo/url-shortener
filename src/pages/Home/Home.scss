@@ -1,3 +1,44 @@
-.main-title{
-  border-bottom: 1px solid #656e79;
+$pink: #de02e7;
+$circle-svg: '../../assets/svg/circle.svg';
+$triangle-svg: '../../assets/svg/triangle.svg';
+$rectangle-svg: '../../assets/svg/rectangle.svg';
+
+body {
+  background: #f7f7f7;
+  background-image: url($triangle-svg), url($circle-svg), url($rectangle-svg);
+  background-repeat: no-repeat;
+  background-position: top 3rem right calc(50% - 33rem), top -8em left calc(50% - 23rem), bottom calc(50% - 20rem) left calc(50% - 44rem);
+  background-size: 35rem, 18em, 20rem;
+}
+
+.link-shadow {
+	width: 40px;
+	height: 40px;
+	color: $pink;
+}
+
+.shorten-btn {
+  background: linear-gradient(to right, $pink, #5440db);
+  background-repeat: repeat-y;
+  border-radius: 23px;
+  position: absolute;
+  right: -53px;
+  top: 11px;
+  z-index: 100;
+  border-left: $pink;
+  border-right: #5440db;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  color: #d4d7d9;
+  &:hover {
+    background: linear-gradient(to right, #800b9c, #3c2ca9);
+  }
+}
+
+.main-title {
+	border-bottom: 1px solid #656e79;
+}
+
+.marketing-card {
+  font-size: 14px;
 }
