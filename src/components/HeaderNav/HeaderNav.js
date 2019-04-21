@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'react-bootstrap';
+import { Navbar, NavbarBrand, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './HeaderNav.scss';
 const HeaderNav = props => {
   return (
-    <Navbar className="site-header justify-content-between bg-white">
-      <section>
-        <NavbarBrand>
-          Code Culture
-        </NavbarBrand>
-        <ul className="pl-0 d-inline-block">
-          <li className="d-inline-block mr-2">
-            <Link to="#">Famous languages</Link>
-          </li>
-          <li className="d-inline-block mr-2">
-            <Link to="#">Famous Projects</Link>
-          </li>
-          <li className="d-inline-block mr-2">
-            <Link to="#">Hall of Fame</Link>
-          </li>
-        </ul>
-      </section>
-      <section className="float-right">
-        <Link to="#">Search</Link>
-      </section>
+    <Navbar className="site-header py-1 px-0 justify-content-between bg-white">
+      <Row className="w-100 mx-0">
+        <Col lg={ {span: 4, offset: 1} }>
+          <NavbarBrand>
+            Sweet Url Shortener
+          </NavbarBrand>
+        </Col>
+        <Col lg={6}>
+          <ListGroup className="float-right d-inline-block" variant="flush" as="ul">
+            <ListGroup.Item className="px-2 border-0 d-inline-block" as="li">
+              <Link to="#">Pricing</Link>
+            </ListGroup.Item>
+            <ListGroup.Item className="px-2 border-0 d-inline-block" as="li">
+              <Link to="#">Login</Link>
+            </ListGroup.Item>
+            <ListGroup.Item className="px-2 border-0 d-inline-block" as="li">
+              <Link to="#">Get Started</Link>
+            </ListGroup.Item>
+          </ListGroup>        
+        </Col>
+      </Row>
+
+
     </Navbar>
   );
 };
