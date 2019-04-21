@@ -38,8 +38,21 @@ const Home = props => {
                   </div>
                   
                 </div>
-                <div className="url-options mt-5">
-                  Share via Email | Facebook | Twitter 
+                <div className="url-options mt-4">
+                  <ul className="d-inline-block social-share bg-diabled text-white p-3">
+                    <li className="d-inline-block mr-5">
+                      <i className="zmdi zmdi-share"></i>
+                    </li >
+                    <li className="d-inline-block mr-2">
+                      <i className="zmdi zmdi-email"></i>
+                    </li >
+                    <li className="d-inline-block mr-2">
+                      <i className="zmdi zmdi-facebook"></i>
+                    </li>
+                    <li className="d-inline-block mr-2">
+                      <i className="zmdi zmdi-twitter"></i>
+                    </li>
+                  </ul>
                 </div>
               </Card.Body>
             </Card>
