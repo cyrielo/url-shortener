@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
+import MarketingCard from '../../components/MarketingCard/MarketingCard';
 import Mock1 from '../../assets/img/mock1.png';
 import Mock2 from '../../assets/img/mock2.png';
 import Mock3 from '../../assets/img/mock3.png';
@@ -19,7 +20,7 @@ const Home = props => {
                 <div className="promo-head">
                   <h2>
                     A simple link but a powerful tool 
-                    for <strike>Youtubers.</strike>
+                    for Creators.
                   </h2>
                   <section className="mt-4">
                     <p>
@@ -59,39 +60,16 @@ const Home = props => {
           </Col>
         <Col className="" lg="6" >
           <div className="d-flex justify-content-end marketing-cards my-5">
-            <Card className="border-0 m-2 shadow px-3 pt-3 w-50 marketing-card float-right">
-              <Card.Body className="p-0">
-                <img src={Mock1} className="img-fluid d-block mb-2" />
-                <strong>Social. Reach</strong>
-                <p className="p-0">
-                  Share your link to your network.
-                </p>
-              </Card.Body>
-            </Card>
+            <MarketingCard featuredImage={Mock1} title="Social. Reach" content="Share your link to your network." />
           </div>
 
           <div className="d-flex justify-content-center marketing-cards mb-5">
-            <Card className="border-0 m-2 shadow px-3 pt-3 w-50 marketing-card float-right">
-                <Card.Body className="p-0">
-                  <img src={Mock2} className="img-fluid d-block mb-2" />
-                  <strong>Measure. Optimize</strong>
-                  <p className="p-0">
-                    Use data to optimize your marketing campaing's performance.
-                  </p>
-                </Card.Body>
-              </Card>
+            <MarketingCard featuredImage={Mock2} title="Measure. Optimize" content="Use data to optimize your marketing campaing's performance." />
           </div>
 
           <div className="d-flex justify-content-end marketing-cards mb-5">
-            <Card className="border-0 m-2 shadow px-3 pt-3 w-50 marketing-card float-right">
-              <Card.Body className="p-0">
-                <img src={Mock3} className="img-fluid d-block mb-2" />
-                <strong>Target. Re-target</strong>
-                <p className="p-0"> Target an audience that fits your needs.</p>
-              </Card.Body>
-            </Card>
+            <MarketingCard  featuredImage={Mock3}  title="Target. Re-target"  content="Target an audience that fits your needs."  />
           </div>
-
         </Col>
       </Row>
     </>
