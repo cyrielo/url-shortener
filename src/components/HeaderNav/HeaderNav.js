@@ -5,9 +5,9 @@ import './HeaderNav.scss';
 const HeaderNav = props => {
   return (
     <Navbar className="site-header py-1 px-0 justify-content-between bg-white">
-      <Row className="w-100 mx-0">
+      <Row className="w-100 header-row mx-0">
         <Col lg={ {span: 4, offset: 1} }>
-          <NavbarBrand>
+          <NavbarBrand href="/" as="a">
             Sweet Url Shortener
           </NavbarBrand>
         </Col>

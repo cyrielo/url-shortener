@@ -7,7 +7,7 @@ const MarketingCard = props => {
   let className = props.className || null;
 
   return (
-    <Card { ...props } className={`border-0 m-2 shadow px-3 pt-3 w-50 marketing-card ${ className }`}>
+    <Card className={`border-0 m-2 shadow px-3 pt-3 w-50 marketing-card ${ className }`}>
       <Card.Body className="p-0">
         <Image src={featuredImage} fluid className="d-block mb-2" />
         <strong> { title } </strong>

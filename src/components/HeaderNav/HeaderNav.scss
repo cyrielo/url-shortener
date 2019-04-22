@@ -1,0 +1,10 @@
+.header-row:after {
+  // background-image: url("../../assets/img/drop-header.png");
+  bottom: -12px;
+  content: "";
+  display: block;
+  height: 15px;
+  left: 132px;
+  position: absolute;
+  width: 350px;
+}

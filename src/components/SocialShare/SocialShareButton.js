@@ -10,13 +10,17 @@ const SocialShareButton = props => {
           <i className="zmdi zmdi-share"></i>
         </li >
         <li className="d-inline-block mr-2">
-          <a target="_blank" href={urlHelper.shareViaEmail(url)} className="zmdi zmdi-email text-white"></a>
+          <a target="_blank" rel="noopener noreferrer" href={urlHelper.shareViaEmail(url)} className="text-white">
+            <i className="zmdi zmdi-email"></i>
+          </a>
         </li >
         <li className="d-inline-block mr-2">
-          <a target="_blank" href={urlHelper.shareViaFacebook(url)} className="zmdi zmdi-facebook text-white"></a>
+          <a target="_blank" rel="noopener noreferrer" href={urlHelper.shareViaFacebook(url)} title="Facebook Share" className="text-white">
+            <i className="zmdi zmdi-facebook"></i>
+          </a>
         </li>
         <li className="d-inline-block mr-2">
-          <a target="_blank" href={urlHelper.shareViaTwitter(url)} className="zmdi zmdi-twitter text-white"></a>
+          <a target="_blank" rel="noopener noreferrer" href={urlHelper.shareViaTwitter(url)} className="zmdi zmdi-twitter text-white"></a>
         </li>
       </ul>
     </div>
