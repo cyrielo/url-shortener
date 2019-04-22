@@ -5,6 +5,7 @@ import urlShortenerService from '../../requests/urlShortenerService';
 class ShortenerInput extends Component {
   constructor(props) {
     super(props);
+    this.onChange = props.onChange;
   }
 
   state = {
@@ -26,7 +27,7 @@ class ShortenerInput extends Component {
           shortenedUrl: dataSaved.shortenedUrl,
           url: dataSaved.shortenedUrl,
           shortened: true
-        });
+        }, this.onChange(dataSaved.shortenedUrl));
       })
       .catch((error) => {
         console.log("error", error);

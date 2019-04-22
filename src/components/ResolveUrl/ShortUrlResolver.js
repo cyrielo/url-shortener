@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import urlShortenerService from '../../requests/urlShortenerService';
 import urlHelper from '../../helpers/urlHelper';
 
