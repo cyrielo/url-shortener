@@ -4,7 +4,8 @@ import MarketingCard from '../../components/MarketingCard/MarketingCard';
 import Mock1 from '../../assets/img/mock1.png';
 import Mock2 from '../../assets/img/mock2.png';
 import Mock3 from '../../assets/img/mock3.png';
-
+import SocialShareButton from '../../components/SocialShare/SocialShareButton';
+import ShortenerInput from '../../components/ShortenerInput/ShortenerInput';
 
 import './Home.scss';
 const Home = props => {
@@ -30,31 +31,9 @@ const Home = props => {
                   </section>
                 </div>
                 <div className="input-area mt-5">
-                  <div className="input-group mb-3 shadow p-3">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text bg-transparent border-0" id="basic-addon1"><i className="zmdi zmdi-8tracks"></i></span>
-                    </div>
-                    <input type="url" className="form-control bg-transparent border-0" placeholder="https://youtube.com/watch?v=qidysnts" aria-label="url" aria-describedby="basic-addon1"/>
-                    <button className="btn text-white shorten-btn px-4"><i className="zmdi zmdi-copy"></i> Copy</button>
-                  </div>
-                  
+                  <ShortenerInput />
                 </div>
-                <div className="url-options mt-4">
-                  <ul className="d-inline-block social-share bg-diabled text-white p-3">
-                    <li className="d-inline-block mr-5">
-                      <i className="zmdi zmdi-share"></i>
-                    </li >
-                    <li className="d-inline-block mr-2">
-                      <i className="zmdi zmdi-email"></i>
-                    </li >
-                    <li className="d-inline-block mr-2">
-                      <i className="zmdi zmdi-facebook"></i>
-                    </li>
-                    <li className="d-inline-block mr-2">
-                      <i className="zmdi zmdi-twitter"></i>
-                    </li>
-                  </ul>
-                </div>
+                <SocialShareButton url="breakaway" />
               </Card.Body>
             </Card>
           </Col>
