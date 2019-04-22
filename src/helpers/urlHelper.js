@@ -1,9 +1,10 @@
 const urlHelper = {
 
-  randomizeUrl: url => {
+  BASE_URL: window.location.host,
+
+  randomizeUrl: function() {
     const randomString = Math.random().toString(32).substring(2, 5) + Math.random().toString(32).substring(2, 5);
-    url = url.endsWith('/') ? `${url}${randomString}` : `${url}/${randomString}`;
-    return url;
+    return `${this.BASE_URL}/${randomString}`;
   },
 
   shareViaEmail: url => {
