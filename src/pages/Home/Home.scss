@@ -17,24 +17,6 @@ body {
 	color: $pink;
 }
 
-.shorten-btn {
-  background: linear-gradient(to right, $pink, #5440db);
-  background-repeat: repeat-y;
-  border-radius: 23px;
-  position: absolute;
-  right: -53px;
-  top: 11px;
-  z-index: 100;
-  border-left: $pink;
-  border-right: #5440db;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
-  color: #d4d7d9;
-  &:hover {
-    background: linear-gradient(to right, #800b9c, #3c2ca9);
-  }
-}
-
 .main-title {
 	border-bottom: 1px solid #656e79;
 }

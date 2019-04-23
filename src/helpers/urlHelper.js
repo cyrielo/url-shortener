@@ -7,6 +7,10 @@ const urlHelper = {
     return `${this.BASE_URL}/${randomString}`;
   },
 
+  validateUrl: url => {
+    return /^((s3|ftp|https?):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/.test(url);
+  },
+
   shareViaEmail: url => {
     return `mailto:someone@example.com?Subject=Checkout%20this%20link&Body=${url}`;
   },
