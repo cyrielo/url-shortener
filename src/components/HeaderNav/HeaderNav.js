@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import shorts from '../../assets/img/shorts.png';
 import './HeaderNav.scss';
 const HeaderNav = props => {
   return (
@@ -8,7 +9,8 @@ const HeaderNav = props => {
       <Row className="w-100 header-row mx-0">
         <Col lg={ {span: 4, offset: 1} }>
           <NavbarBrand href="/" as="a">
-            Sweet Url Shortener
+            <img src={shorts} width="49" className="logo mr-3" alt="Site logo"/>
+            <span className="site-name">Sweet Shortener</span>
           </NavbarBrand>
         </Col>
         <Col lg={6}>
