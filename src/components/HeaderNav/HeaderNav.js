@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navbar, NavbarBrand, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import shorts from '../../assets/img/shorts.png';
@@ -27,8 +27,6 @@ const HeaderNav = props => {
           </ListGroup>        
         </Col>
       </Row>
-
-
     </Navbar>
   );
 };

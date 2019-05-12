@@ -24,7 +24,9 @@ const SocialShareButton = props => {
                 </a>
               </li>
               <li className="d-inline-block mr-2">
-                <a target="_blank" rel="noopener noreferrer" href={urlHelper.shareViaTwitter(url)} className="zmdi zmdi-twitter text-white"></a>
+                <a target="_blank" rel="noopener noreferrer" href={urlHelper.shareViaTwitter(url)} className="text-white">
+                  <i className="zmdi zmdi-twitter"></i>
+                </a>
               </li>            
             </>
           ): null

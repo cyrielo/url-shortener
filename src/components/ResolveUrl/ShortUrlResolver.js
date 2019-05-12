@@ -4,10 +4,6 @@ import urlHelper from '../../helpers/urlHelper';
 
 class ShortUrlResolver extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   state = {
     originalUrl: '/'
   }
