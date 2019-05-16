@@ -1,0 +1,25 @@
+[debug] [2019-05-16T07:28:46.734Z] ----------------------------------------------------------------------
+[debug] [2019-05-16T07:28:46.738Z] Command:       /Users/cyril/.nvm/versions/node/v11.12.0/bin/node /Users/cyril/.nvm/versions/node/v11.12.0/bin/firebase serve
+[debug] [2019-05-16T07:28:46.738Z] CLI Version:   6.9.2
+[debug] [2019-05-16T07:28:46.738Z] Platform:      darwin
+[debug] [2019-05-16T07:28:46.738Z] Node Version:  v11.12.0
+[debug] [2019-05-16T07:28:46.739Z] Time:          Thu May 16 2019 08:28:46 GMT+0100 (West Africa Standard Time)
+[debug] [2019-05-16T07:28:46.739Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-16T07:28:46.749Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-16T07:28:46.749Z] > authorizing via signed-in user
+[debug] [2019-05-16T07:28:46.750Z] [iam] checking project sweet-url-shortener for permissions ["firebase.projects.get"]
+[debug] [2019-05-16T07:28:46.751Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sweet-url-shortener:testIamPermissions  
+
+[debug] [2019-05-16T07:28:48.782Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-16T07:28:48.784Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sweet-url-shortener  
+ 
+[debug] [2019-05-16T07:28:51.263Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/cyril/projects/Url-Shortener'...
+[info] 
+[debug] [2019-05-16T07:28:51.266Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/949677047319/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-16T07:28:52.183Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
